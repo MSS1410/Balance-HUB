@@ -70,9 +70,17 @@ Navegación: Cada juego se despliega en pantalla completa y, al completarlo, se 
 Interacción: Dependiendo del juego, el usuario interactúa mediante clics sobre colores, círculos o rejillas del Tic Tac Toe para cumplir los criterios establecidos.
 
 
+## Notas Adicionales
+
+- Cuando lo he intentado inicializar antes de subirlo, he notado percance el link de el html general;
+-   <link rel="stylesheet" href="src./style.css" /> , enteoria esta es la configuracion de enlace correcta, si el estilado sale roto, 
+ probar con cambiar el < href="./style.css" >
+
+
+
 ## Estructura del Proyecto
 
-  
+```php  
 Balance-HUB/
 ├── index.html               # Punto de entrada principal (para la versión de desarrollo o como plantilla)
 ├── package.json
@@ -92,13 +100,6 @@ Balance-HUB/
 │       └── toe/
 │           └── toe.js           # Lógica del Tic Tac Toe
 
-
-
-## Notas Adicionales
-
-- Cuando lo he intentado inicializar antes de subirlo, he notado percance el link de el html general;
--   <link rel="stylesheet" href="src./style.css" /> , enteoria esta es la configuracion de enlace correcta, si el estilado sale roto, 
- probar con cambiar el < href="./style.css" >
 
 
 
