@@ -189,23 +189,23 @@ function generarIntercalado() {
 function generarEspecial() {
   const fallingContainer = document.getElementById('fallingContent')
 
-  const circleInfo = circles['circleEspecial'] // Obtenemos la info del círculo especial
+  const circleInfo = circles['circleEspecial'] // obtengo la info del circulo especial
   const circleFigure = document.createElement('div')
-  circleFigure.classList.add('circle', 'van', 'espurna') // Clase general + especial
+  circleFigure.classList.add('circle', 'van', 'espurna') // clase general + especial
 
-  // Asignamos tamaño, velocidad y posición inicial
+  // asigno tamaño, velocidad y posicion inicial
   circleFigure.style.width = circleInfo.size
   circleFigure.style.height = circleInfo.size
   circleFigure.style.left = `${Math.random() * 90}vw`
   circleFigure.classList.add('circleEspecial')
-  // Añadimos el círculo al contenedor de caídas
+  // añado el circulo al contenedor de caida
   fallingContainer.appendChild(circleFigure)
 
-  // Iniciar la caída del círculo especial
+  // inicio  caida de circulo especial
   iniciarCaidaEspecial(circleFigure, circleInfo, 'circleEspecial')
   // delimito que tengo uno en scr para que espere el siguiente
   especialEnScreen = true
-  // Incrementar el contador de especiales generados
+  // incrementa el contador de especiales generados
   especialEnScreen++
   especialGenerados++
 }
@@ -213,16 +213,16 @@ function iniciarCaidaEspecial(circleFigure, circleInfo, circlekey) {
   circleFigure.style.transition = `transform ${circleInfo.velocidad} linear`
 
   setTimeout(() => {
-    circleFigure.style.transform = 'translateY(100vh)' // Caída
+    circleFigure.style.transform = 'translateY(100vh)' // caida
 
-    // Cuando termina la animación, eliminamos el círculo y permitimos otro especial
+    // cuando termina la animacion, elimno  circulo y entra otro especial
     setTimeout(() => {
       circleFigure.remove() //
       especialEnScreen--
     }, parseFloat(circleInfo.velocidad) * 1000) // shoutout en milisec
   }, 100)
 
-  //click to delete an one less
+  //click to delete y  uno menos
 
   circleFigure.addEventListener('click', () => {
     especialClicks++
@@ -261,7 +261,7 @@ function generarCircle() {
   // coloco el inicio de los circulos atl
   fallingContainer.appendChild(circleFigure)
 
-  // caidita del circulo pa
+  // caidita del circulo 
   iniciarCaida(circleFigure, circleInfo)
 }
 
