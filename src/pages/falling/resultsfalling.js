@@ -60,7 +60,7 @@ function verificarBalance(resultadoFalling, circleAlmacen) {
   }
 }
 
-// +10 messi
+// mas de 10 circulos
 
 function circlesBalanced(resultadoFalling) {
   const circlesBalance = document.createElement('div')
@@ -110,7 +110,7 @@ function circlesBalanced(resultadoFalling) {
   circlesBalance.appendChild(restartBut)
   circlesBalance.appendChild(homebut)
 }
-// kristiano
+// si no llega a 10 circulos
 
 function circlesUnbalanced(resultadoFalling) {
   const UncirclesBalance = document.createElement('div')
