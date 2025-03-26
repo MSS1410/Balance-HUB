@@ -72,9 +72,10 @@ Interacción: Dependiendo del juego, el usuario interactúa mediante clics sobre
 
 ## Notas Adicionales
 
-- Cuando lo he intentado inicializar antes de subirlo, he notado percance el link de el html general;
--   <link rel="stylesheet" href="src./style.css" /> , enteoria esta es la configuracion de enlace correcta, si el estilado sale roto, 
- probar con cambiar el < href="./style.css" >
+-Pequeño percance en la carga de estilos, si no carga correctamente desde el html general con esta href:
+ ( link rel="stylesheet" href="src./style.css" ) ,
+ 
+ si el estilado sale roto, probar con cambiar el [ href="./style.css ]
 
 
 
