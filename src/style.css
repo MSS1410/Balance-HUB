@@ -116,14 +116,14 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-image: url('./assets/f5.png'); /* Utilizamos el mismo fondo */
+  background-image: url('./assets/f5.png'); /*  mismo fondo */
   background-size: cover;
   background-position: center;
   z-index: -1;
   overflow: hidden;
 }
 
-/* Título "COLORS" que aparece al inicio del juego */
+/* Título COLORS al inicio del juego */
 #nombre {
   position: absolute;
   top: 45%;
@@ -174,7 +174,7 @@
   box-shadow: 0 0 15px currentColor, 0 0 20px currentColor;
   animation: moverEstela 6s linear forwards;
 
-  /* animation: moverEstela 2s ease-out forwards;animacion moveeement */
+  /* animation: moverEstela 2s ease-out forwards;animacion movement */
 }
 @keyframes moverEstela {
   0% {
@@ -182,9 +182,9 @@
     opacity: 1;
   }
   100% {
-    /* moving atle direccion */
+    /* muevo atleatoria direccion */
     transform: translateY(100vh);
-    /* mientras avanti desvanenti */
+    /* mientras avanzo desvanezco */
     opacity: 0.8;
   }
 }
@@ -213,7 +213,7 @@
   background-color: rgba(136, 133, 133, 0.868);
 }
 
-/* Animación suave de flotación para las estelas de colores */
+/* animacion suave de flotar para las estelas de colores */
 @keyframes flotar {
   0% {
     transform: translateY(0);
@@ -367,7 +367,7 @@
   border-radius: 50%;
   background-color: transparent;
   box-shadow: 0 0 10px rgba (255, 255, 255, 0.8); /* brillante*/
-  transition: width 1s ease, height 1s ease, transform 1s ease; /* suavizar los changes*/
+  transition: width 1s ease, height 1s ease, transform 1s ease; /* suavizar los cambios*/
 }
 
 .circleEspecial {
@@ -819,7 +819,7 @@
   }
 }
 /* casa */
-/* mobi */
+/* mobil */
 @media (max-width: 480px) {
   .nombre {
     font-size: 18vw;
@@ -842,7 +842,7 @@
 }
 
 /* //media para colors */
-/* miniscreen */
+/* pantalla pequeña */
 @media (max-width: 480px) {
   #nombre h1,
   .text {
@@ -861,7 +861,7 @@
   }
 }
 
-/* middle screen */
+/* mediana pantalla */
 @media (min-width: 481px) and (max-width: 1024px) {
   #nombre h1,
   .text {
@@ -880,8 +880,8 @@
   }
 }
 
-/* //media para falling */
-/* telefoneria */
+/* //mediana para falling */
+/* mobil */
 @media (max-width: 480px) {
   #ftittle {
     display: flex;
@@ -909,13 +909,13 @@
   }
 }
 
-/* mmmm tableteria*/
+/* medida tablet*/
 @media (min-width: 481px) and (max-width: 1024px) {
   #ftittle {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 12vw; /* Tamaño ajustado para tablets */
+    font-size: 12vw; /* Tamaño ajustado para tablet */
     text-align: center;
     margin-top: 3vh; /* Espacio superior para separación */
   }
@@ -938,40 +938,40 @@
 }
 
 /* //media para toe */
-/* para que lo vea bueno en el siphone*/
+/* iphone*/
 @media (max-width: 480px) {
   #ToeContent {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh; /* Asegura que el contenido esté centrado verticalmente */
+    height: 100vh; /* centro contenido vertical */
     text-align: center;
   }
 
   #textDiv {
-    max-width: 90vw; /* Limita el ancho del texto para evitar desbordamiento */
-    padding: 2vh 5vw; /* Añade algo de padding para que no quede pegado a los bordes */
+    max-width: 90vw; /* limito ancho de texto para que no desborde */
+    padding: 2vh 5vw; /* padding para bordes */
   }
 
   .textToe {
-    font-size: 4vw; /* Tamaño de fuente ajustado para pantallas pequeñas */
-    line-height: 1.4; /* Espaciado entre líneas para mejorar la legibilidad */
+    font-size: 4vw; /*fuente pequeña */
+    line-height: 1.4; /* espacio entre lineas para lectura */
   }
   .tituloToe {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 12vw; /* Tamaño ajustado para pantallas pequeñas */
+    font-size: 12vw; 
     text-align: center;
-    margin-top: 2vh; /* Espacio superior para separación */
+    margin-top: 2vh; 
   }
   .tituloContainer {
     margin-bottom: 5vh; /* Espacio debajo del subtítulo para que no toque la mesa */
   }
   .subtituloPlayer {
     font-size: 6vw;
-    margin-bottom: 4vh; /* Ajuste adicional para evitar solapamiento */
+    margin-bottom: 4vh; /* evitar que solape */
   }
   .texturned {
     font-size: 4vw;
@@ -984,20 +984,20 @@
     margin-top: 2vh; /* Añade un margen superior para separar del texto */
   }
 }
-/* para tableta mamauevo */
+/* para tablet */
 @media (min-width: 481px) and (max-width: 1024px) {
   #ToeContent {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh; /* Centra el contenido verticalmente en pantalla */
+    height: 100vh; /* Centra el contenido vertical*/
     text-align: center;
   }
 
   #textDiv {
-    max-width: 80vw; /* Limita el ancho para evitar que el texto se extienda demasiado */
-    padding: 3vh 4vw; /* Espacio adicional para una mejor separación de bordes */
+    max-width: 80vw; /* limite en el ancho para evitar que el texto se extienda */
+    padding: 3vh 4vw; /* bordes */
   }
   #formuPlay h2 {
     font-size: 4vw;
@@ -1018,14 +1018,14 @@
   }
 
   .textToe {
-    font-size: 3.5vw; /* Ajuste del tamaño de fuente para tablets */
-    line-height: 1.5; /* Espaciado entre líneas para mejorar la legibilidad */
+    font-size: 3.5vw; 
+    line-height: 1.5; /*mejorar lectura */
   }
 
   .buttss {
     font-size: 5vw;
     padding: 1.5vh 4vw;
-    margin-top: 3vh; /* Margen superior para separar el botón del texto */
+    margin-top: 3vh; /*  separa el botón del texto */
   }
   .finalButts {
     font-size: 3vw;
@@ -1036,9 +1036,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 4.5vw; /* Tamaño ajustado para tablets */
+    font-size: 4.5vw; 
     text-align: center;
-    margin-top: 3vh; /* Espacio superior para separación */
+    margin-top: 3vh; 
   }
   .tituloContainer {
     margin-bottom: 4vh;
