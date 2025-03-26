@@ -160,11 +160,11 @@ export function motorTicTac(jugadorA, jugadorB) {
   let movments = 0 // para posible empate
   const rejillas = Array(9).fill(null) //despues de dar 300 vueltas, creo que, necesito tener en cada posicion del array el valor null para poder saber que la tengo en ese momento vacia. luego yo recogere los movimientos para ver las combinaciones que han echo
   // la intencion es tener algo asi
-  // ['X', nully, 'O',}
-  // // nulyly, 'X', 'O',
-  // // 'O', nully, 'X']
+  // ['X', null, 'O',}
+  // // null, 'X', 'O',
+  // // 'O', null, 'X']
 
-  // gestion de turno actu
+  // gestion de turno actualizado
 
   const textTurned = document.createElement('h3')
   textTurned.classList.add('texturned')
@@ -175,7 +175,7 @@ export function motorTicTac(jugadorA, jugadorB) {
     turno = turno === jugadorA ? jugadorB : jugadorA
     textTurned.textContent = `Your move: ${turno}`
   }
-  // tengo que generar 3x3 mesa asi que 9 rejillas
+  // tengo que generar 3x3 mesa asi que necesito 9 rejillas
 
   for (let i = 0; i < 9; i++) {
     const reji = document.createElement('div')
@@ -189,15 +189,15 @@ export function motorTicTac(jugadorA, jugadorB) {
         movments++
         verifyWinner()
 
-        //NECESITO CAMBIAR TURNO TIO
+        //NECESITO CAMBIAR TURNO 
         if (!ganador) changeTurno()
       }
     })
     mesa.appendChild(reji)
   }
 
-  // vale, genero la funcion para verificar si en el turno se ha completado un movimiento
-  // si imaginamos el tablero con los indices de posiciones, las combis ganadoras son
+  // OK, genero la funcion para verificar si en el turno se ha completado un movimiento
+  // si imaginamos el tablero con los indices de posiciones, las combinaciones ganadoras son
   function verifyWinner() {
     const combinacionestriunfantes = [
       // Filas
@@ -212,7 +212,7 @@ export function motorTicTac(jugadorA, jugadorB) {
       [0, 4, 8],
       [2, 4, 6]
     ]
-    // `portanto ataco con un forof para que me repase las combinaciones que hemos definido antes
+    // por tanto ataco con un forof para que me repase las combinaciones que hemos definido antes
     for (let combinacion of combinacionestriunfantes) {
       // ami combinacion me llegara como [0,1,2] ejemplo, ENTONCES LO que hago es destructuro el array para que me quede como a= 0 b=1 c=2 asi accedo mejor a los indices, lo puedo comparar directamente
       const [a, b, c] = combinacion
@@ -269,7 +269,7 @@ export function motorTicTac(jugadorA, jugadorB) {
   }
 }
 
-// amo a darle un finale combrobar ganador
+// final que compruebe ganador
 function mostrarGanador(jugador) {
   const winText = document.createElement('div')
   winText.classList.add('winText')
