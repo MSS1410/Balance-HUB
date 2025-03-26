@@ -157,10 +157,10 @@ function crearElementoEstelaColor(color) {
   //le añado la clase por ejemplo, color.red
   elementoEstelaColor.classList.add('color', color)
   // POSIcion atleatoria
-  const moveX = Math.random() * 90 + 'vw' // Posición horizontal entre 0% y 100% del ancho
-  const moveY = Math.random() * 20 + 'vh' // Posición vertical entre 0% y 100% de la altura
+  const moveX = Math.random() * 90 + 'vw' // posicion horizontal entre 0 y 100% del ancho
+  const moveY = Math.random() * 20 + 'vh' // posicion vertical entre 0 y 100% de la altura
 
-  // Aplicar las posiciones al elemento
+  // aplico  posiciones al elemento
   elementoEstelaColor.style.left = moveX
   elementoEstelaColor.style.top = moveY
 
@@ -186,7 +186,7 @@ function crearElementoEstelaColor(color) {
   return elementoEstelaColor
 }
 
-// logica de inicio
+
 
 // logica end colors
 
