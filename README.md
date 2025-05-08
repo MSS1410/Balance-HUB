@@ -12,8 +12,8 @@
 - [Instalación](#instalación)
 - [Uso](#uso)
 - [Estructura del Proyecto](#estructura-del-proyecto)
-- [Notas Adicionales](#notas-adicionales)
-- [Créditos](#créditos)
+
+
 - [Licencia](#licencia)
 
 ---
